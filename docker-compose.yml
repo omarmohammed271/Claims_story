@@ -1,0 +1,8 @@
+services:
+  claims-story:
+    build: .
+    image: basirah/claims-story:0.1.0
+    container_name: claims-story
+    ports:
+      - "8080:80"
+    restart: unless-stopped
